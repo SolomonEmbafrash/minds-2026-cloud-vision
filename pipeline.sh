@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --job-name=pipeline
-#SBATCH --account=project_2001220
+#SBATCH --account=project_2018175
 #SBATCH --partition=gputest
 #SBATCH --time=00:15:00
 #SBATCH --ntasks=1
@@ -14,11 +14,11 @@ module load pytorch/2.7
 pip install -U --user pandas ollama
 
 # Download ollama models to scratch rather than the home directory
-OLLAMA_SCRATCH=/scratch/project_2001220/akusokan/ollama
+OLLAMA_SCRATCH=/scratch/project_2018175/embafras/ollama
 export OLLAMA_MODELS=${OLLAMA_SCRATCH}/models
 
 # Add ollama installation dir to PATH
-export PATH=/scratch/project_2001220/akusokan/ollama/bin:$PATH
+export PATH=/scratch/project_2018175/embafras/ollama/bin:$PATH
 
 # Simple way to start ollama. All the server outputs will appear in
 # the slurm log mixed with everything else.

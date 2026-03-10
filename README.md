@@ -1,4 +1,4 @@
-# Cloud Vision – Assignment 3  
+# Cloud Computing MIND – Assignment 3  
 ## Image Search with Ollama Embeddings
 
 Author: Solomon Kiflom  
